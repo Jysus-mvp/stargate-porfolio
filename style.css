@@ -152,7 +152,7 @@ body{
 }
 
 .info-section {
-    background: url('imagenes/space\ rocket.jpg') center/cover no-repeat;
+    background: url('imagenes/space rocket.jpg') center/cover no-repeat;
     padding: 5rem 0;
     position: relative;
 }
@@ -415,4 +415,5 @@ body a{
         height: 4vw;
     }
 }
+
 }
