@@ -1,0 +1,418 @@
+*{
+    font-family: rubik, helvetica, arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#logo{ 
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 3%;
+    font-size:2rem;
+}
+
+#navbar{
+    margin: auto;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+.nav-item{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+.main {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* El video cubre toda la sección */
+    z-index: -1; /* Se queda detrás del contenido */
+}
+
+.main-text {
+    position: relative;
+    z-index: 2; /* Mantiene el texto por encima del video */
+}
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según necesites */
+    object-fit: cover;
+}
+
+
+
+.main-text h1{
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+
+.btn1{
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.btn1 button{
+    border: none;
+    border-radius: 60px;
+    padding: 3%;
+    background-color: black;
+    color: yellow;
+}
+
+.overlay {
+    background-color: black;
+}
+/*clase para hacer bloques de texto*/
+.text-block{
+    text-align: justify;
+}
+.tittle-h1{
+    font-size: 4.5vw;
+}
+
+
+.news{
+    background-color: black;
+    color: white;
+}
+.btn2{
+    height: 45px;
+    width: 100px;
+    background-color: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+
+.news input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline:  none;
+    background: black ;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.news::placeholder{
+    color: white;
+}
+ 
+.news p{
+    margin: 0;
+}
+
+.contact p {
+    font-size: 0.9rem;
+}
+.contact h6 {
+    font-weight: bolder;
+}
+#whatsapp-btn {
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  width: 4vw;
+  z-index: 9999; /* Asegura que quede sobre todo */
+  border-radius: 50%;
+}
+
+#whatsapp-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.list-group-item{
+    background-color: black;
+}
+
+.contact-icon{
+  font-size: 3vw;
+}
+
+.info-section {
+    background: url('imagenes/space\ rocket.jpg') center/cover no-repeat;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.content-box {
+    position: relative; /* Para que esté encima del overlay */
+    background-color: rgba(255,255,255,0.8); /* Fondo claro semitransparente */
+    padding: 2rem;
+    margin: 0 auto; /* Esto centra horizontalmente */
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+
+.card-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-body a.btn {
+    margin-top: auto; /* Empuja el botón al fondo */
+}
+
+#footer{
+    background-color: black;
+}
+
+
+
+
+
+/*seccion escondida ////////////////////////////////////////////*/
+.events-info_1::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*como por defecto el dialog se despliega a la izquierda y arriba del viewport uso este metodo un poco raro para centrarlo ya que el flex rompe el codigo del dialog, saludos!*/
+.events-info_1 {
+    z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+}
+/*Esta parte es para ocultar la barra del scroll sin eliminarlo*/
+.events-info_1 {
+  overflow: auto; /* mantiene scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.events-info_1::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.event-btn1{
+    margin-left: 93%;
+    margin-top: 3%;
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/*/////*/
+.events-info_2::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*como por defecto el dialog se despliega a la izquierda y arriba del viewport uso este metodo un poco raro para centrarlo ya que el flex rompe el codigo del dialog, saludos!*/
+.events-info_2 {
+    z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+}
+/*Esta parte es para ocultar la barra del scroll sin eliminarlo*/
+.events-info_2 {
+  overflow: auto; /* mantiene scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.events-info_2::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.event-btn2{
+    margin-left: 93%;
+    margin-top: 3%;
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/*/////*/
+.events-info_3::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*como por defecto el dialog se despliega a la izquierda y arriba del viewport uso este metodo un poco raro para centrarlo ya que el flex rompe el codigo del dialog, saludos!*/
+.events-info_3 {
+    z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+}
+/*Esta parte es para ocultar la barra del scroll sin eliminarlo*/
+.events-info_3 {
+  overflow: auto; /* mantiene scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.events-info_3::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.event-btn3{
+    margin-left: 93%;
+    margin-top: 3%;
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/*/////*/
+.events-info_4::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*como por defecto el dialog se despliega a la izquierda y arriba del viewport uso este metodo un poco raro para centrarlo ya que el flex rompe el codigo del dialog, saludos!*/
+.events-info_4 {
+    z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+}
+/*Esta parte es para ocultar la barra del scroll sin eliminarlo*/
+.events-info_4 {
+  overflow: auto; /* mantiene scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.events-info_4::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.event-btn4{
+    margin-left: 93%;
+    margin-top: 3%;
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/*/////*/
+
+
+.events-info1{
+    font-size: 0.5rem;
+}
+.event-btn1 svg{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.event-btn2 svg{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.event-btn3 svg{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.event-btn4 svg{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+
+/*conttrol para hipervinculos en los textos*/
+body a{
+    text-decoration: none;
+}
+
+@media(max-width: 800px){
+    .events-info1{
+        font-size: 0.5rem;
+    }
+    .event-btn1 svg{
+        width: 3vw;
+        height: 3vw;
+    }
+    .event-btn2 svg{
+        width: 3vw;
+        height: 3vw;
+    }
+    .event-btn3 svg{
+        width: 3vw;
+        height: 3vw;
+    }
+    .event-btn4 svg{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+
+
+/*imagen de la seccion de informacion principal*/
+@media(max-width: 500px){
+
+    .main-text h1{
+        font-size: 8vw;
+        font-weight: 700;
+    }
+    .btn1{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    #info-block1{
+        font-size: 6vw;
+        font-family: rubik, helvetica, arial, sans-serif;
+    }
+}
+@media(max-width: 768px){
+    #whatsapp-btn {
+        position: fixed;
+        bottom: 2vw;
+  right: 1vw;
+  width: 13vw;
+  z-index: 9999; /* Asegura que quede sobre todo */
+  border-radius: 50%;
+}
+
+/*Control para el boton de salida de la seccion de evento*/
+@media(max-width: 320px){
+    .event-btn1 svg{
+        width: 4vw;
+        height: 4vw;
+    }
+    .event-btn2 svg{
+        width: 4vw;
+        height: 4vw;
+    }
+    .event-btn3 svg{
+        width: 3vw;
+        height: 4vw;
+    }
+    .event-btn4 svg{
+        width: 4vw;
+        height: 4vw;
+    }
+}
+}
